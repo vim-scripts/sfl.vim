@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=717
+
+SFL, Structured Function description Language, is a one of the Hardware Description Language. SFL is Register Transfer Level HDL, the programming style is like C or Pascal.
+Please see here: http://www.onlab.ntt.co.jp/mn/parthenon/pack.html
+
+SFL can be converted to Verilog HDL by sfl2vl. 
+Please see here: http://shimizu-lab.dt.u-tokai.ac.jp/pgm/sfl2vl/index.html
+
+This syntax was designed for dark background.
