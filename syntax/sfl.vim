@@ -1,17 +1,17 @@
 " Vim syntax file
 " Language:	SFL
 " Maintainer:	Yoshihiro Iida <yiida@fw.ipsj.or.jp>
-" Last Change:	Jul 20, 2003
+" Last Change:	Jul 21, 2003
 " URL:          http://shimizu-lab.dt.u-tokai.ac.jp/
 " Filenames:    *.sfl
-" Version:	0.3
+" Version:	1.0
 
 syn case ignore
 
 
 " storage types
-syn keyword	sflType		module declare par any alt stage state instruct task else circuit
-syn keyword	sflInst		if state_name first_state input output instrin bidirect segment
+syn keyword	sflType		module declare if par any alt stage state else circuit
+syn keyword	sflInst		state_name first_state input output instrin bidirect segment instruct task
 syn keyword	sflInst		instrout instr_arg instrself reg reg_ws reg_wr sel mem sel_v bus bus_v
 syn keyword	sflInst		stage_name goto call return generate relay finish
 syn match	sflBracket	"[(){}=:;\.]"
@@ -101,9 +101,9 @@ if version >= 508 || !exists("did_sfl_syn_inits")
   HiLink sflLogic	Number
 
   HiLink sflIdentifier	Identifier
-  HiLink sflSubmodule	Special
+  HiLink sflSubmodule	Identifier
   HiLink sflBracket	Default
-  HiLink sflLabel	Special
+  HiLink sflLabel	Number
 
 "  HiLink sflSubmodule	Identifier
 "  HiLink sflBracket	Special
